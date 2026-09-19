@@ -296,7 +296,7 @@ function MaterialCard({ item, list }) {
                       items={[
                         { label: "Draft", value: item.draft },
                         {
-                          label: "Unrest",
+                          label: "Free stock",
                           value: item.unrest - item.draft,
                         },
                         { label: "Project", value: item.project },
