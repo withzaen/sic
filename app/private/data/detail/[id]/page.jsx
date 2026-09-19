@@ -446,7 +446,7 @@ function StockSection({ post }) {
       value: (post.unrest || 0) - (post.draft || 0),
     },
     { label: "Project", value: post.project },
-    { label: "Total", value: (post.unrest || 0) + (post.project || 0) },
+    { label: "Total", value: (post.unrest || 0) + (post.project || 0) - (post.draft || 0) },
   ];
 
   const others = [
