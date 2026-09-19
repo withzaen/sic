@@ -300,7 +300,7 @@ function MaterialCard({ item, list }) {
                           value: item.unrest - item.draft,
                         },
                         { label: "Project", value: item.project },
-                        { label: "Total", value: item.unrest + item.project },
+                        { label: "Total", value: item.unrest + item.project - item.draft },
                       ]}
                     />
                     <div className="flex items-center gap-4">
