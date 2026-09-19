@@ -442,7 +442,7 @@ function StockSection({ post }) {
   const g001Items = [
     { label: "Draft", value: post.draft },
     {
-      label: "Unrest",
+      label: "Free stock",
       value: (post.unrest || 0) - (post.draft || 0),
     },
     { label: "Project", value: post.project },
