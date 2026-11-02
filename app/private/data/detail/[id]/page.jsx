@@ -443,7 +443,7 @@ function StockSection({ post }) {
     { label: "Draft", value: post.draft },
     {
       label: "Free stock",
-      value: (post.unrest || 0) - (post.draft || 0),
+      value: (post.actual || 0) - (post.project || 0),
     },
     { label: "Project", value: post.project },
     { label: "Total", value: (post.unrest || 0) + (post.project || 0) - (post.draft || 0) },
