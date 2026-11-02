@@ -297,7 +297,7 @@ function MaterialCard({ item, list }) {
                         { label: "Draft", value: item.draft },
                         {
                           label: "Free stock",
-                          value: item.unrest - item.draft,
+                          value: item.actual - item.project,
                         },
                         { label: "Project", value: item.project },
                         { label: "Total", value: item.unrest + item.project - item.draft },
