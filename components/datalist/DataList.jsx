@@ -300,7 +300,7 @@ function MaterialCard({ item, list }) {
                           value: item.actual - item.project,
                         },
                         { label: "Project", value: item.project },
-                        { label: "Total", value: item.actual + item.project },
+                        { label: "Total", value: item.actual },
                       ]}
                     />
                     <div className="flex items-center gap-4">
